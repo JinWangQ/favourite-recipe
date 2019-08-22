@@ -1,20 +1,34 @@
 import React, {Component} from "react";
+import {connect} from "react-redux";
 import {Content, Nav, NavItem, NavText, IconWrapper} from "../StyledComponents";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGem} from "@fortawesome/free-solid-svg-icons";
+import {showModal, hideModal} from "../redux/actions";
 
-export class PageContent extends Component {
+class PageContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
       rotate: false
     };
   }
+
   onMouseEnterOrLeave = () => {
     this.setState({
       rotate: !this.state.rotate
     });
   };
+
+  handleViewRecipe = () => {
+    this.props.showModal(
+      {
+        open: true,
+        hideModal
+      },
+      "RECIPE"
+    );
+  };
+
   render() {
     const recipes = require("../data/deserts.json");
     return (
@@ -32,6 +46,7 @@ export class PageContent extends Component {
               <NavText
                 onMouseEnter={this.onMouseEnterOrLeave}
                 onMouseLeave={this.onMouseEnterOrLeave}
+                onClick={this.handleViewRecipe}
               >
                 {recipe.title}
               </NavText>
@@ -42,3 +57,8 @@ export class PageContent extends Component {
     );
   }
 }
+
+export default connect(
+  null,
+  {showModal, hideModal}
+)(PageContent);

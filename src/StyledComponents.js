@@ -13,6 +13,7 @@ export const HeaderTitle = styled.div`
   text-align: center;
   padding: 0.5rem 0;
   color: #db4d6d;
+  opacity: 0.7;
 `;
 
 export const Content = styled.section`
@@ -45,6 +46,7 @@ export const NavItem = styled.div`
 export const NavText = styled.h5`
   display: inline-block;
   margin: 0;
+  opacity: 0.7;
   :after {
     display: block;
     content: "";
@@ -68,4 +70,17 @@ const rotate = keyframes`
 export const IconWrapper = styled.span`
   display: inline-block;
   animation: ${rotate} 2s linear infinite;
+`;
+
+export const RecipeModal = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
+export const CloseButton = styled.span`
+  color: #d05a6e;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  opacity: 0.5;
 `;
