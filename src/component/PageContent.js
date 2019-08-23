@@ -6,6 +6,32 @@ import {faGem} from "@fortawesome/free-solid-svg-icons";
 import {showModal, hideModal} from "../redux/actions";
 
 class PageContent extends Component {
+  render() {
+    const {recipes} = this.props;
+    return (
+      <Content>
+        <Nav>
+          {recipes.map(recipe => (
+            <NavItemRecipe
+              key={recipe.id}
+              recipe={recipe}
+              recipes={this.props.recipes}
+              showModal={this.props.showModal}
+              hideModal={this.props.hideModal}
+            />
+          ))}
+        </Nav>
+      </Content>
+    );
+  }
+}
+
+export default connect(
+  null,
+  {showModal, hideModal}
+)(PageContent);
+
+class NavItemRecipe extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,45 +46,35 @@ class PageContent extends Component {
   };
 
   handleViewRecipe = () => {
+    const {recipe} = this.props;
     this.props.showModal(
       {
         open: true,
+        recipe,
         hideModal
       },
       "RECIPE"
     );
   };
-
   render() {
-    const recipes = require("../data/deserts.json");
+    const {recipe} = this.props;
     return (
-      <Content>
-        <Nav>
-          {recipes.map(recipe => (
-            <NavItem key={recipe.id}>
-              {this.state.rotate ? (
-                <IconWrapper>
-                  <FontAwesomeIcon icon={faGem} size="xs" />
-                </IconWrapper>
-              ) : (
-                <FontAwesomeIcon icon={faGem} size="xs" />
-              )}{" "}
-              <NavText
-                onMouseEnter={this.onMouseEnterOrLeave}
-                onMouseLeave={this.onMouseEnterOrLeave}
-                onClick={this.handleViewRecipe}
-              >
-                {recipe.title}
-              </NavText>
-            </NavItem>
-          ))}
-        </Nav>
-      </Content>
+      <NavItem>
+        {this.state.rotate ? (
+          <IconWrapper>
+            <FontAwesomeIcon icon={faGem} size="xs" />
+          </IconWrapper>
+        ) : (
+          <FontAwesomeIcon icon={faGem} size="xs" />
+        )}{" "}
+        <NavText
+          onMouseEnter={this.onMouseEnterOrLeave}
+          onMouseLeave={this.onMouseEnterOrLeave}
+          onClick={this.handleViewRecipe}
+        >
+          {recipe.title}
+        </NavText>
+      </NavItem>
     );
   }
 }
-
-export default connect(
-  null,
-  {showModal, hideModal}
-)(PageContent);

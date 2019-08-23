@@ -5,10 +5,11 @@ import "./App.scss";
 import ModalRoot from "./component/Modals/ModalRoot";
 
 function App() {
+  const recipes = require("./data/deserts.json");
   return (
     <div className="App">
       <PageHeader />
-      <PageContent />
+      <PageContent recipes={recipes} />
       <ModalRoot />
     </div>
   );

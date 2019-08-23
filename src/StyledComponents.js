@@ -8,7 +8,7 @@ export const Header = styled.section`
 `;
 
 export const HeaderTitle = styled.div`
-  font-family: cursive;
+  font-family: Kalam;
   font-size: 1.5rem;
   text-align: center;
   padding: 0.5rem 0;
@@ -28,10 +28,9 @@ export const Content = styled.section`
 
 export const Nav = styled.section`
 margin: auto;
-width: 50%;
 padding: 10px;
   
-    width 20rem;
+    width 25rem;
     height: 100%;
     background: #FEDFE1;
     
@@ -39,11 +38,11 @@ padding: 10px;
 
 export const NavItem = styled.div`
   color: #d05a6e;
-  font-family: cursive;
+  font-family: Kalam, Zhi Mang Xing;
   margin: 1rem;
 `;
 
-export const NavText = styled.h5`
+export const NavText = styled.h3`
   display: inline-block;
   margin: 0;
   opacity: 0.7;
@@ -77,10 +76,47 @@ export const RecipeModal = styled.div`
   height: 100%;
 `;
 
-export const CloseButton = styled.span`
-  color: #d05a6e;
-  float: right;
-  margin-right: 1rem;
-  margin-top: 1rem;
+export const RecipeHeader = styled.div`
+  width: 100%;
+
+  font-family: Kalam, Zhi Mang Xing;
+  text-align: center;
+  top: 1rem;
+  position: relative;
+  color: rgb(0, 0, 0, 0.4);
+`;
+
+export const CloseButton = styled.button`
+bottom: 1rem;
+width: 5rem;
+height: 2.5rem;
+position: absolute;
+left: 50%;
+margin-left: -2.5rem;
+  color: rgb(204, 204, 204);
+
+  border: 1px solid  rgb(204, 204, 204);
+  border-radius: 3px
   opacity: 0.5;
+  :hover {
+    cursor: pointer;
+    color: #d05a6e;
+    border-color: #d05a6e;
+  }
+`;
+
+export const Ingredient = styled.span`
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.4);
+  font-family: Kalam, Zhi Mang Xing;
+  display: block;
+  :hover {
+    color: #d05a6e;
+  }
+`;
+
+export const RecipeContent = styled.div`
+  position: relative;
+  margin-top: 3rem;
 `;

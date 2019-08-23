@@ -25,25 +25,28 @@ class ModalRoot extends React.Component {
   }
 
   componentDidUpdate = prevProps => {
-    if (prevProps.modalProps.open !== this.props.modalProps.open) {
-      console.log(this.props.modalProps);
+    if (prevProps !== this.props) {
+      this.setState({modalIsOpen: this.props.modalProps.open});
     }
   };
 
   handleClose = () => {
-    this.props.hideModal();
+    this.setState({
+      modalIsOpen: !this.state.modalIsOpen
+    });
   };
 
   render() {
-    if (!this.props.modalType) {
-      return null;
-    }
+    if (!this.props.modalType) return null;
     const SpecifiedModal = MODAL_TYPES[this.props.modalType];
     return (
       <ReactModal
-        isOpen={this.props.modalProps.open}
+        isOpen={this.state.modalIsOpen}
+        onRequestClose={this.handleClose}
         className="Modal_Content"
         overlayClassName="Modal_Overlay"
+        shouldCloseOnOverlayClick={true}
+        closeTimeoutMS={500}
       >
         <SpecifiedModal
           closeModal={this.handleClose}

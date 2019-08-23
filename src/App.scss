@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Zhi Mang Xing";
+  font-style: normal;
+  src: url("./fonts/ZhiMangXing-Regular.ttf");
+}
+@font-face {
+  font-family: "Kalam";
+  font-style: normal;
+  src: url("./fonts/Kalam-Regular.ttf");
+}
 .App {
   display: flex;
   flex-flow: column;
