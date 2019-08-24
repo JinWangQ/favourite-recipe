@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/favourite-recipe/static/css/main.8ccaf271.chunk.css",
-    "main.js": "/favourite-recipe/static/js/main.f481c407.chunk.js",
-    "main.js.map": "/favourite-recipe/static/js/main.f481c407.chunk.js.map",
+    "main.js": "/favourite-recipe/static/js/main.97b284a9.chunk.js",
+    "main.js.map": "/favourite-recipe/static/js/main.97b284a9.chunk.js.map",
     "runtime~main.js": "/favourite-recipe/static/js/runtime~main.7e39bc00.js",
     "runtime~main.js.map": "/favourite-recipe/static/js/runtime~main.7e39bc00.js.map",
-    "static/js/2.9e1ad105.chunk.js": "/favourite-recipe/static/js/2.9e1ad105.chunk.js",
-    "static/js/2.9e1ad105.chunk.js.map": "/favourite-recipe/static/js/2.9e1ad105.chunk.js.map",
+    "static/js/2.f9912138.chunk.js": "/favourite-recipe/static/js/2.f9912138.chunk.js",
+    "static/js/2.f9912138.chunk.js.map": "/favourite-recipe/static/js/2.f9912138.chunk.js.map",
     "index.html": "/favourite-recipe/index.html",
-    "precache-manifest.b69c426fb307ec50a9236fa076ad28f1.js": "/favourite-recipe/precache-manifest.b69c426fb307ec50a9236fa076ad28f1.js",
+    "precache-manifest.fd17740cf137f9249cd6ea0d6fb82b9c.js": "/favourite-recipe/precache-manifest.fd17740cf137f9249cd6ea0d6fb82b9c.js",
     "service-worker.js": "/favourite-recipe/service-worker.js",
     "static/css/main.8ccaf271.chunk.css.map": "/favourite-recipe/static/css/main.8ccaf271.chunk.css.map",
     "static/media/App.scss": "/favourite-recipe/static/media/ZhiMangXing-Regular.eeca044e.ttf"
