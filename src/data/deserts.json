@@ -2,17 +2,32 @@
   {
     "id": 1,
     "title": "Milk tea with seasalt cream cap",
-    "recipe": [
+    "ingredients": [
       "Milk: 1",
       "Cream cheese: 1",
       "Condense milk: 1",
       "Sea salt: 2g",
       "Cream: 4"
-    ]
+    ],
+    "recipe": [{"youtube": "https://youtu.be/S_5nnWplU5s"}]
   },
   {
     "id": 2,
     "title": "炸洋芋",
-    "recipe": ["洋芋", "芫茜", "姜水", "蒜水", "五香粉", "辣椒粉", "腐乳水"]
+    "ingredients": [
+      "洋芋",
+      "芫茜",
+      "姜水",
+      "蒜水",
+      "五香粉",
+      "辣椒粉",
+      "腐乳水"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "香菜牛百叶",
+    "ingredients": ["牛百叶", "芫茜", "蒜", "米醋", "生抽", "油泼辣子", "盐"],
+    "recipe": [{"weibo": "http://t.cn/AiW7Eq79"}]
   }
 ]

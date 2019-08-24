@@ -120,3 +120,13 @@ export const RecipeContent = styled.div`
   position: relative;
   margin-top: 3rem;
 `;
+
+export const LinkIconWrpper = styled.a`
+  color: rgb(0, 0, 0, 0.4);
+  text-align: center;
+  display: block;
+  :hover {
+    color: #d05a6e;
+    curser: pointer;
+  }
+`;
