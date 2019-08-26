@@ -4,6 +4,7 @@ import {Content, Nav, NavItem, NavText, IconWrapper} from "../StyledComponents";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGem} from "@fortawesome/free-solid-svg-icons";
 import {showModal, hideModal} from "../redux/actions";
+import {getCat} from "../scripts/axios";
 
 class PageContent extends Component {
   render() {
@@ -45,13 +46,16 @@ class NavItemRecipe extends Component {
     });
   };
 
-  handleViewRecipe = () => {
+  handleViewRecipe = async () => {
     const {recipe} = this.props;
+    const url = `https://api.thecatapi.com/v1/images/search`;
+    const cat = await getCat(url);
     this.props.showModal(
       {
         open: true,
         recipe,
-        hideModal
+        hideModal,
+        cat
       },
       "RECIPE"
     );

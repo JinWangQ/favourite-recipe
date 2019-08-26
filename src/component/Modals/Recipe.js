@@ -5,10 +5,12 @@ import {
   Ingredient,
   RecipeHeader,
   RecipeContent,
-  LinkIconWrpper
+  LinkIconWrpper,
+  PicWrapper,
+  CatIcon
 } from "../../StyledComponents";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faIceCream} from "@fortawesome/free-solid-svg-icons";
+import {faIceCream, faCat} from "@fortawesome/free-solid-svg-icons";
 import {faYoutube, faWeibo} from "@fortawesome/free-brands-svg-icons";
 
 export class Recipe extends Component {
@@ -17,7 +19,7 @@ export class Recipe extends Component {
   };
 
   render() {
-    const {recipe} = this.props;
+    const {recipe, cat} = this.props;
     return (
       <RecipeModal>
         <RecipeHeader>{recipe.title}</RecipeHeader>
@@ -35,6 +37,12 @@ export class Recipe extends Component {
               />
             ))}
         </RecipeContent>
+        <PicWrapper>
+          <img src={cat[0].url} width="270" alt="" />
+        </PicWrapper>
+        <CatIcon>
+          <FontAwesomeIcon icon={faCat} size="1x" />
+        </CatIcon>
         <CloseButton onClick={this.handleClick}>
           <FontAwesomeIcon icon={faIceCream} size="2x" />
         </CloseButton>

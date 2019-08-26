@@ -2,3 +2,5 @@ export const MODAL_ACTION = {
   HIDE_MODAL: "HIDE_MODAL",
   SHOW_MODAL: "SHOW_MODAL"
 };
+
+export const GET_CAT_FACT = "GET_CAT_FACT";

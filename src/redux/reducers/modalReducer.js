@@ -1,8 +1,9 @@
-import {MODAL_ACTION} from "../actionTypes";
+import {MODAL_ACTION, GET_CAT_FACT} from "../actionTypes";
 
 const initialState = {
   modalType: null,
-  modalProps: {}
+  modalProps: {},
+  cats: null
 };
 
 export default function(state = initialState, action) {
@@ -17,6 +18,13 @@ export default function(state = initialState, action) {
     }
     case MODAL_ACTION.HIDE_MODAL:
       return initialState;
+    case GET_CAT_FACT: {
+      console.log(action.payload);
+      return {
+        type: GET_CAT_FACT,
+        cats: action.payload
+      };
+    }
     default:
       return state;
   }

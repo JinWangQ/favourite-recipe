@@ -25,8 +25,10 @@ class ModalRoot extends React.Component {
   }
 
   componentDidUpdate = prevProps => {
-    if (prevProps !== this.props) {
-      this.setState({modalIsOpen: this.props.modalProps.open});
+    if (this.props.modalProps) {
+      if (prevProps !== this.props) {
+        this.setState({modalIsOpen: this.props.modalProps.open});
+      }
     }
   };
 

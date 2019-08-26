@@ -130,3 +130,23 @@ export const LinkIconWrpper = styled.a`
     curser: pointer;
   }
 `;
+
+export const PicWrapper = styled.div`
+  margin: auto;
+  position: relative;
+  top: 2rem;
+  opacity: 0.8;
+  border-radius: 1rem;
+  width: 270px;
+  height: 162px;
+  overflow: hidden;
+`;
+
+export const CatIcon = styled.span`
+  display: block;
+  color: #d05a6e;
+  text-align: center;
+  position: relative;
+  margin: 2rem;
+  opacity: 0.8;
+`;
