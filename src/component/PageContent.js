@@ -5,10 +5,11 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGem} from "@fortawesome/free-solid-svg-icons";
 import {showModal, hideModal} from "../redux/actions";
 import {getCat} from "../scripts/axios";
+import PropTypes from "prop-types";
 
 class PageContent extends Component {
   render() {
-    const {recipes} = this.props;
+    const {recipes, showModal, hideModal} = this.props;
     return (
       <Content>
         <Nav>
@@ -16,9 +17,9 @@ class PageContent extends Component {
             <NavItemRecipe
               key={recipe.id}
               recipe={recipe}
-              recipes={this.props.recipes}
-              showModal={this.props.showModal}
-              hideModal={this.props.hideModal}
+              recipes={recipes}
+              showModal={showModal}
+              hideModal={hideModal}
             />
           ))}
         </Nav>
@@ -26,6 +27,12 @@ class PageContent extends Component {
     );
   }
 }
+
+PageContent.propTypes = {
+  recipes: PropTypes.array.isRequired,
+  showModal: PropTypes.func.isRequired,
+  hideModal: PropTypes.func.isRequired
+};
 
 export default connect(
   null,
@@ -47,10 +54,10 @@ class NavItemRecipe extends Component {
   };
 
   handleViewRecipe = async () => {
-    const {recipe} = this.props;
+    const {recipe, showModal} = this.props;
     const url = `https://api.thecatapi.com/v1/images/search`;
     const cat = await getCat(url);
-    this.props.showModal(
+    showModal(
       {
         open: true,
         recipe,
@@ -60,6 +67,7 @@ class NavItemRecipe extends Component {
       "RECIPE"
     );
   };
+
   render() {
     const {recipe} = this.props;
     return (
@@ -82,3 +90,10 @@ class NavItemRecipe extends Component {
     );
   }
 }
+
+NavItemRecipe.propTypes = {
+  recipe: PropTypes.object.isRequired,
+  recipes: PropTypes.array.isRequired,
+  showModal: PropTypes.func.isRequired,
+  hideModal: PropTypes.func.isRequired
+};

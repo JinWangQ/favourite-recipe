@@ -12,6 +12,7 @@ import {
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faIceCream, faCat} from "@fortawesome/free-solid-svg-icons";
 import {faYoutube, faWeibo} from "@fortawesome/free-brands-svg-icons";
+import PropTypes from "prop-types";
 
 export class Recipe extends Component {
   handleClick = () => {
@@ -51,15 +52,28 @@ export class Recipe extends Component {
   }
 }
 
+Recipe.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+  open: PropTypes.bool.isRequired,
+  recipe: PropTypes.object.isRequired,
+  hideModal: PropTypes.func.isRequired,
+  cat: PropTypes.array.isRequired
+};
+
 class Source extends Component {
+  static defaultProps = {
+    source: "",
+    link: ""
+  };
   getIcon = () => {
-    switch (this.props.source) {
+    const {source} = this.props;
+    switch (source) {
       case "youtube":
         return faYoutube;
       case "weibo":
         return faWeibo;
       default:
-        throw new Error(`Unsupport source type: ${this.props.source}`);
+        throw new Error(`Unsupport source type: ${source}`);
     }
   };
 
@@ -71,3 +85,8 @@ class Source extends Component {
     );
   }
 }
+
+Source.propTypes = {
+  source: PropTypes.string,
+  link: PropTypes.string
+};
