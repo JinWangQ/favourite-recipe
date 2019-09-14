@@ -4,7 +4,7 @@ import {Header, HeaderTitle} from "../StyledComponents";
 export function PageHeader() {
   return (
     <Header>
-      <HeaderTitle>The Recipes I Love</HeaderTitle>
+      <HeaderTitle>The Recipes</HeaderTitle>
     </Header>
   );
 }
