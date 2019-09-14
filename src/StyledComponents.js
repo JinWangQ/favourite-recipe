@@ -2,7 +2,9 @@ import styled, {keyframes} from "styled-components";
 import background from "./assest/background.jpg";
 
 const fontColor = "#174931";
+const recipeTextColor = "#4e2068";
 const backgroundColor = "#b9ceda";
+const modalIconColor = "#b03248";
 export const Header = styled.section`
   height: 4rem;
   width: 100%;
@@ -66,6 +68,9 @@ export const NavText = styled.h3`
       transform: scaleX(1);
     }
   }
+  @media (hover: none) {
+    background: green;
+  }
 `;
 
 const rotate = keyframes`
@@ -81,59 +86,63 @@ export const IconWrapper = styled.span`
 export const RecipeModal = styled.div`
   width: 100%;
   height: 100%;
+  z-index: 0;
 `;
 
 export const RecipeHeader = styled.div`
   width: 100%;
-
   font-family: Chilanka, Long Cang;
+  font-size: 2rem;
   text-align: center;
-  top: 1rem;
-  position: relative;
-  color: rgb(0, 0, 0, 0.4);
+  padding-top: 1rem;
+  position: sticky;
+  top: 0;
+  z-index:1
+  color: ${recipeTextColor};
+  background: #fff;
+  box-shadow: 0px 1px 3px 1.5px rgba(0, 0, 0, 0.1);
 `;
 
 export const CloseButton = styled.button`
   bottom: 1rem;
   width: 5rem;
   height: 2.5rem;
-  position: absolute;
+  position: relative;
   left: 50%;
   margin-left: -2.5rem;
-  color: rgb(204, 204, 204);
-  border: 1px solid  rgb(204, 204, 204);
-  border-radius: 3px
-  opacity: 0.5;
+  color: ${modalIconColor};
+  background-color: #fff;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 3px;
   :hover {
     cursor: pointer;
-    color: #d05a6e;
-    border-color: #d05a6e;
+    border-color: ${modalIconColor};
   }
 `;
 
 export const Ingredient = styled.span`
-  text-align: center;
   text-decoration: none;
-  color: rgb(0, 0, 0, 0.4);
+  color: ${recipeTextColor};
   font-family: Chilanka, Long Cang;
-  display: block;
+  display: inline-block;
   :hover {
-    color: #d05a6e;
+    color: #3a6820;
+    cursor: pointer;
   }
 `;
 
 export const RecipeContent = styled.div`
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1rem;
 `;
 
 export const LinkIconWrpper = styled.a`
   color: rgb(0, 0, 0, 0.4);
   text-align: center;
   display: block;
+  cursor: pointer;
   :hover {
-    color: #d05a6e;
-    curser: pointer;
+    color: ${modalIconColor};
   }
 `;
 
@@ -150,9 +159,17 @@ export const PicWrapper = styled.div`
 
 export const CatIcon = styled.span`
   display: block;
-  color: #d05a6e;
+  color: ${modalIconColor};
   text-align: center;
   position: relative;
   margin: 2rem;
   opacity: 0.8;
+`;
+
+export const CheckMarkIconWrapper = styled.span`
+  color: #247e6f;
+`;
+
+export const IngredientItemWrapper = styled.div`
+  text-align: center;
 `;

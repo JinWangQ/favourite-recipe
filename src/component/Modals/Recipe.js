@@ -7,10 +7,16 @@ import {
   RecipeContent,
   LinkIconWrpper,
   PicWrapper,
-  CatIcon
+  CatIcon,
+  CheckMarkIconWrapper,
+  IngredientItemWrapper
 } from "../../StyledComponents";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faIceCream, faCat} from "@fortawesome/free-solid-svg-icons";
+import {
+  faIceCream,
+  faCat,
+  faShoppingBasket
+} from "@fortawesome/free-solid-svg-icons";
 import {faYoutube, faWeibo} from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 
@@ -26,7 +32,7 @@ export class Recipe extends Component {
         <RecipeHeader>{recipe.title}</RecipeHeader>
         <RecipeContent>
           {recipe.ingredients.map(ingredient => (
-            <Ingredient key={ingredient}>{ingredient}</Ingredient>
+            <IngredientItem ingredient={ingredient}></IngredientItem>
           ))}
           {recipe.recipe &&
             recipe.recipe.length &&
@@ -89,4 +95,37 @@ class Source extends Component {
 Source.propTypes = {
   source: PropTypes.string,
   link: PropTypes.string
+};
+
+class IngredientItem extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  handleIngredient = () => {
+    this.setState({
+      checkMark: !this.state.checkMark
+    });
+  };
+  render() {
+    const {ingredient} = this.props;
+    const {checkMark} = this.state;
+    return (
+      <IngredientItemWrapper>
+        <Ingredient key={ingredient} onClick={this.handleIngredient}>
+          {ingredient}
+        </Ingredient>
+        {checkMark ? (
+          <CheckMarkIconWrapper>
+            {" "}
+            <FontAwesomeIcon icon={faShoppingBasket} />
+          </CheckMarkIconWrapper>
+        ) : null}
+      </IngredientItemWrapper>
+    );
+  }
+}
+
+Source.propTypes = {
+  ingredient: PropTypes.string
 };
