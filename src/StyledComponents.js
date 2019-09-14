@@ -68,9 +68,6 @@ export const NavText = styled.h3`
       transform: scaleX(1);
     }
   }
-  @media (hover: none) {
-    background: green;
-  }
 `;
 
 const rotate = keyframes`
