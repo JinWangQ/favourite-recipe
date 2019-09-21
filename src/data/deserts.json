@@ -54,5 +54,23 @@
         "youtube": "https://youtu.be/xKlimsszsVw"
       }
     ]
+  },
+  {
+    "id": 5,
+    "title": "铜锣烧",
+    "ingredients": [
+      "面粉：130g",
+      "糖粉：35g",
+      "牛奶：80g",
+      "玉米油：20g",
+      "鸡蛋： 2个",
+      "蜂蜜： 15g",
+      "红豆沙： 100g"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/Rh9OmwELhp8"
+      }
+    ]
   }
 ]
