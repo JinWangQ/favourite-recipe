@@ -72,5 +72,41 @@
         "youtube": "https://youtu.be/Rh9OmwELhp8"
       }
     ]
+  },
+  {
+    "id": 6,
+    "title": "芝麻汤圆",
+    "ingredients": [
+      "芝麻馅",
+      "熟黑芝麻：120g",
+      "细砂糖：30g",
+      "黄油：80g",
+      "糯米团",
+      "糯米粉： 200g",
+      "热水： 60g",
+      "冷水： 95g"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/fEnew7j1itc"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "葡式蛋挞",
+    "ingredients": [
+      "牛奶：110g",
+      "鸡蛋：1个",
+      "蛋黄：1个",
+      "细砂糖：40g",
+      "淡奶油： 180g",
+      "速冻挞皮"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/Ya115jO-QIU"
+      }
+    ]
   }
 ]
