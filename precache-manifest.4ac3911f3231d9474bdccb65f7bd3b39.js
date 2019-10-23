@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "038a80d84931870005b4c52b29a01160",
+    "revision": "5d3e435c798e29e16c3603c3c0c8345c",
     "url": "/favourite-recipe/index.html"
   },
   {
-    "revision": "c1a085058ea91cac465e",
+    "revision": "99810d32deb6078d8f3e",
     "url": "/favourite-recipe/static/css/main.80a11805.chunk.css"
   },
   {
-    "revision": "214d8388e1398f1aef31",
-    "url": "/favourite-recipe/static/js/2.f92a1cb2.chunk.js"
+    "revision": "7fdc0f868d19023b26c7",
+    "url": "/favourite-recipe/static/js/2.5243ea42.chunk.js"
   },
   {
-    "revision": "c1a085058ea91cac465e",
-    "url": "/favourite-recipe/static/js/main.eb6137b8.chunk.js"
+    "revision": "99810d32deb6078d8f3e",
+    "url": "/favourite-recipe/static/js/main.d9c2ec48.chunk.js"
   },
   {
-    "revision": "9f397c22e93b064c6d03",
-    "url": "/favourite-recipe/static/js/runtime~main.7e39bc00.js"
+    "revision": "d1badd6c0f52fd544f62",
+    "url": "/favourite-recipe/static/js/runtime-main.f680b385.js"
   },
   {
     "revision": "ba32e9863761cf72f378cc16b5123854",
