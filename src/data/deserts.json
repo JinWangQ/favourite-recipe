@@ -108,5 +108,49 @@
         "youtube": "https://youtu.be/Ya115jO-QIU"
       }
     ]
+  },
+  {
+    "id": 8,
+    "title": "Triple Chocolate Cookie",
+    "ingredients": [
+      "Butter: 100g",
+      "White chocolate: 120g",
+      "Milk chocolate: 120g",
+      "Dark chocolate: 120g",
+      "Salt",
+      "Baking powder: 1tsp",
+      "Fine sugur: 100g",
+      "Flour: 150g",
+      "Vanilla extract: 1tsp",
+      "Egg: 1"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/zbPx2wQPtDk"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "辣炒花甲",
+    "ingredients": [
+      "干辣椒",
+      "青花椒",
+      "大蒜",
+      "姜",
+      "葱",
+      "蚝油",
+      "料酒",
+      "生抽",
+      "鸡精",
+      "胡椒",
+      "白糖",
+      "水淀粉"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/FrR1v410en0"
+      }
+    ]
   }
 ]
