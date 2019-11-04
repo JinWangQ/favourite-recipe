@@ -152,5 +152,15 @@
         "youtube": "https://youtu.be/FrR1v410en0"
       }
     ]
+  },
+  {
+    "id": 10,
+    "title": "米布",
+    "ingredients": ["牛奶：250g", "粘米粉：40g", "糖：5g"]
+  },
+  {
+    "id": 11,
+    "title": "凉皮",
+    "ingredients": ["澄粉：250g", "面粉：25g", "水：450ml"]
   }
 ]
