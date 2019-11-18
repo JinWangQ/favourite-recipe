@@ -162,5 +162,15 @@
     "id": 11,
     "title": "凉皮",
     "ingredients": ["澄粉：250g", "面粉：25g", "水：450ml"]
+  },
+  {
+    "id": "12",
+    "title": "油泼面",
+    "ingredients": ["面粉：365g", "水：191g"],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/38XuHv8Rgig"
+      }
+    ]
   }
 ]
