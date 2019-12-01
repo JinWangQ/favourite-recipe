@@ -172,5 +172,22 @@
         "youtube": "https://youtu.be/38XuHv8Rgig"
       }
     ]
+  },
+  {
+    "id": "13",
+    "title": "戚风蛋糕",
+    "ingredients": [
+      "鸡蛋：3个",
+      "细砂糖：60g",
+      "牛奶：40g",
+      "玉米油:35g",
+      "玉米淀粉：5g",
+      "面粉：50g"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/0mhj93bbzyY"
+      }
+    ]
   }
 ]
