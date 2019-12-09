@@ -189,5 +189,21 @@
         "youtube": "https://youtu.be/0mhj93bbzyY"
       }
     ]
+  },
+  {
+    "id": "14",
+    "title": "蛋挞",
+    "ingredients": [
+      "鸡蛋：1个",
+      "蛋黄：1个",
+      "牛奶：110g",
+      "细砂糖：40g",
+      "淡奶油：180g"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/Ya115jO-QIU"
+      }
+    ]
   }
 ]
