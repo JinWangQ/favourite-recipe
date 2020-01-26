@@ -205,5 +205,23 @@
         "youtube": "https://youtu.be/Ya115jO-QIU"
       }
     ]
+  },
+  {
+    "id": "15",
+    "title": "Japanese/Cotton Cheesecake",
+    "ingredients": [
+      "鸡蛋：3个",
+      "牛奶：80g",
+      "细砂糖：60g",
+      "低筋面粉：20g",
+      "玉米淀粉：10g",
+      "黄油：25g",
+      "奶油芝士：125g"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/gUNY3r9Ut-8"
+      }
+    ]
   }
 ]
