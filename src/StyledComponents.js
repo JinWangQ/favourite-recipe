@@ -29,12 +29,14 @@ export const Content = styled.section`
   bottom: 0;
   width 100%;
   height: calc(100vh - 4rem); 
-  background-image:url(${background});
+  background-image:url(${background}); 
   background-image-width: 2000px;
   background-size: cover;
   flex: 1 1 auto;
   display: flex;
   height: 100%; 
+  overflow-x: hidden;
+  overflow-y: scroll;
 `;
 
 export const Nav = styled.section`
