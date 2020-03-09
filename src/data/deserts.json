@@ -244,5 +244,50 @@
         "youtube": "https://youtu.be/DFsudGcu5-4"
       }
     ]
+  },
+  {
+    "id": "17",
+    "title": "芝士慕斯蛋糕",
+    "ingredients": [
+      "重芝士蛋糕",
+      "奶油芝士：125g",
+      "淡奶油：200g",
+      "酸奶：50g",
+      "柠檬汁：15ml",
+      "果酱：100g",
+      "吉利丁：12.5g",
+      "饼干底",
+      "消化饼干：80g",
+      "黄油：30g"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/I5rdAQ6mfFk?list=TLPQMDkwMzIwMjDZjru8vuvz4g"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "title": "青椒牛肉",
+    "ingredients": [
+      "牛肉",
+      "盐",
+      "小苏打",
+      "白胡椒粉",
+      "老抽",
+      "玉米淀粉",
+      "配菜",
+      "姜",
+      "蒜",
+      "青椒",
+      "干辣椒",
+      "洋葱",
+      "老抽"
+    ],
+    "recipe": [
+      {
+        "youtube": "https://youtu.be/olAw2chcBow?list=TLPQMDkwMzIwMjDZjru8vuvz4g"
+      }
+    ]
   }
 ]
