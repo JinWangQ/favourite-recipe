@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/favourite-recipe/static/css/main.4d839f82.chunk.css",
-    "main.js": "/favourite-recipe/static/js/main.28c95050.chunk.js",
-    "main.js.map": "/favourite-recipe/static/js/main.28c95050.chunk.js.map",
-    "runtime-main.js": "/favourite-recipe/static/js/runtime-main.e2a95da9.js",
-    "runtime-main.js.map": "/favourite-recipe/static/js/runtime-main.e2a95da9.js.map",
-    "static/js/2.e32bd67b.chunk.js": "/favourite-recipe/static/js/2.e32bd67b.chunk.js",
-    "static/js/2.e32bd67b.chunk.js.map": "/favourite-recipe/static/js/2.e32bd67b.chunk.js.map",
+    "main.css": "/favourite-recipe/static/css/main.3be77963.chunk.css",
+    "main.js": "/favourite-recipe/static/js/main.a8c0de71.chunk.js",
+    "main.js.map": "/favourite-recipe/static/js/main.a8c0de71.chunk.js.map",
+    "runtime-main.js": "/favourite-recipe/static/js/runtime-main.69ec5a1b.js",
+    "runtime-main.js.map": "/favourite-recipe/static/js/runtime-main.69ec5a1b.js.map",
+    "static/js/2.db5ae4d7.chunk.js": "/favourite-recipe/static/js/2.db5ae4d7.chunk.js",
+    "static/js/2.db5ae4d7.chunk.js.map": "/favourite-recipe/static/js/2.db5ae4d7.chunk.js.map",
     "index.html": "/favourite-recipe/index.html",
-    "precache-manifest.1d522071a67c7152dd32f348a12914c6.js": "/favourite-recipe/precache-manifest.1d522071a67c7152dd32f348a12914c6.js",
+    "precache-manifest.ff307903f810307f775b20c8118c8f94.js": "/favourite-recipe/precache-manifest.ff307903f810307f775b20c8118c8f94.js",
     "service-worker.js": "/favourite-recipe/service-worker.js",
-    "static/css/main.4d839f82.chunk.css.map": "/favourite-recipe/static/css/main.4d839f82.chunk.css.map",
-    "static/js/2.e32bd67b.chunk.js.LICENSE.txt": "/favourite-recipe/static/js/2.e32bd67b.chunk.js.LICENSE.txt",
+    "static/css/main.3be77963.chunk.css.map": "/favourite-recipe/static/css/main.3be77963.chunk.css.map",
+    "static/js/2.db5ae4d7.chunk.js.LICENSE.txt": "/favourite-recipe/static/js/2.db5ae4d7.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/favourite-recipe/static/media/LongCang-Regular.7f2612b2.ttf",
     "static/media/background.jpg": "/favourite-recipe/static/media/background.d04e57de.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e2a95da9.js",
-    "static/js/2.e32bd67b.chunk.js",
-    "static/css/main.4d839f82.chunk.css",
-    "static/js/main.28c95050.chunk.js"
+    "static/js/runtime-main.69ec5a1b.js",
+    "static/js/2.db5ae4d7.chunk.js",
+    "static/css/main.3be77963.chunk.css",
+    "static/js/main.a8c0de71.chunk.js"
   ]
 }
